@@ -1,0 +1,177 @@
+body {
+	font-family: 'Space Mono';
+	min-height: 100vh;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(../img/background_blurred.jpg) no-repeat, center;
+	background-size: cover;
+	color: white;
+}
+
+header {
+	padding: 1rem;
+	font-size: 1rem;
+}
+
+#projects_toggler {
+	font-size: inherit;
+	color: rgb(0,204,106);
+}
+
+#projects_toggler:focus {
+	box-shadow: 0 0 0 0.1rem;
+}
+
+header > .row a {
+	vertical-align: middle;
+}
+
+.quicksand {
+	font-family: 'Quicksand';
+}
+
+#landing_page {
+	height: calc(100vh - 84.06px);
+}
+
+footer {
+	padding-bottom: 1rem;
+}
+
+a {
+	color: rgb(0,204,106);
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+	color: white;
+}
+
+.animate {
+	position: relative;
+	z-index: 1;
+}
+
+.animate::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: -0.25em;
+  right: -0.25em;
+  background-color: rgba(150, 150, 150, 0.25);
+  transform-origin: center right;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+  border-radius: 4px;
+}
+
+.animate:hover::before {
+  transform: scaleX(1);
+  transform-origin: center left;
+}
+
+.social-buttons {
+	font-size: 2rem;
+}
+
+#see_projects > i::before {
+	line-height: 2.6rem;
+}
+
+#my_projects > div {
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+}
+
+@media(min-width: 768px) {
+	#my_projects > div:nth-child(odd) {
+		padding-right: 0.2rem;
+	}
+	
+	#my_projects > div:nth-child(even) {
+		padding-left: 0.2rem;
+	}
+}
+
+#my_projects div[id$="_container"] {
+	width: auto;
+	min-height: auto;
+	border-radius: 4px;
+	overflow: hidden;
+	background-attachment: scroll;
+    background-position: center top;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#my_projects div[id$="_container"] a {
+	color: white;
+}
+
+.project-content {
+	width: 100%;
+	min-height: 340px;
+	opacity: 0.8;
+    padding: 1rem;
+	border-radius: 4px;
+	transition: margin 0.5s;
+}
+
+#my_projects div[id$="_container"]:hover .project-content {
+	margin-left: -100%;
+	transition: margin 0.5s;
+    -moz-transition: margin 0.5s; 
+    -webkit-transition: margin 0.5s;
+    -o-transition: margin 0.5s;
+}
+
+#logios_container {
+	background-image: url(../img/logios/main.png);
+}
+
+#logios_container .project-content {
+	background-color: rgb(4,70,135);
+}
+
+#cvbuilder_container {
+	background-image: url(../img/cvbuilder/main.jpg);
+}
+
+#cvbuilder_container .project-content {
+	background-color: rgb(56,133,70);
+}
+
+#streadio_container {
+	background-image: url(../img/streadio/main.png);
+}
+
+#streadio_container .project-content {
+	background-color: rgb(139,6,6);
+}
+
+#minibird_container {
+	background-image: url(../img/minibird/main.jpg);
+}
+
+#minibird_container .project-content {
+	background-color: rgb(173,94,5);
+}
+
+#winnotes_container {
+	background-image: url(../img/winnotes/main.png);
+}
+
+#winnotes_container .project-content {
+	background-color: rgb(39,106,81);
+}
+
+#find_my_subtitles_container {
+	background-image: url('../img/find my subtitles/main.png');
+}
+
+#find_my_subtitles_container .project-content {
+	background-color: rgb(101,146,12);
+}
