@@ -1,9 +1,35 @@
+:root {
+	--main-link-color: rgb(0,204,106);
+}
+
+@font-face {
+	font-family: 'Space Mono';
+	src: url(../fonts/SpaceMono-Regular.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Quicksand';
+	src: url(../fonts/Quicksand-Regular.ttf) format('truetype');
+}
+
 body {
+	position: relative;
 	font-family: 'Space Mono';
 	min-height: 100vh;
-	background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(../img/background_blurred.jpg) no-repeat, center;
-	background-size: cover;
 	color: white;
+}
+
+body:before {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(../img/background_blurred.jpg) no-repeat center center;
+  background-size: cover;
+  z-index: -3;
+  content: '';
+  position: fixed;
+  will-change: transform;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 
 header {
@@ -13,7 +39,10 @@ header {
 
 #projects_toggler {
 	font-size: inherit;
-	color: rgb(0,204,106);
+	color: var(--main-link-color);
+	transition: color 0.3s ease-in-out;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 #projects_toggler:focus {
@@ -37,9 +66,9 @@ footer {
 }
 
 a {
-	color: rgb(0,204,106);
+	color: var(--main-link-color);
 	text-decoration: none;
-	transition: all 0.3s ease-in-out;
+	transition: color 0.3s ease-in-out;
 }
 
 a:hover {
@@ -77,6 +106,12 @@ a:hover {
 
 #see_projects > i::before {
 	line-height: 2.6rem;
+}
+
+#see_projects:hover > i {
+	position: relative;
+	animation: bounce 1s infinite;
+	-webkit-animation: bounce 1s infinite;
 }
 
 #my_projects > div {
@@ -129,7 +164,7 @@ a:hover {
 }
 
 #logios_container {
-	background-image: url(../img/logios/main.png);
+	background-image: url(../img/logios/portada.png);
 }
 
 #logios_container .project-content {
@@ -137,7 +172,7 @@ a:hover {
 }
 
 #cvbuilder_container {
-	background-image: url(../img/cvbuilder/main.jpg);
+	background-image: url(../img/cvbuilder/portada.jpg);
 }
 
 #cvbuilder_container .project-content {
@@ -145,7 +180,7 @@ a:hover {
 }
 
 #streadio_container {
-	background-image: url(../img/streadio/main.png);
+	background-image: url(../img/streadio/portada.png);
 }
 
 #streadio_container .project-content {
@@ -153,7 +188,7 @@ a:hover {
 }
 
 #minibird_container {
-	background-image: url(../img/minibird/main.jpg);
+	background-image: url(../img/minibird/portada.jpg);
 }
 
 #minibird_container .project-content {
@@ -161,7 +196,7 @@ a:hover {
 }
 
 #winnotes_container {
-	background-image: url(../img/winnotes/main.png);
+	background-image: url(../img/winnotes/portada.png);
 }
 
 #winnotes_container .project-content {
@@ -169,9 +204,23 @@ a:hover {
 }
 
 #find_my_subtitles_container {
-	background-image: url('../img/find my subtitles/main.png');
+	background-image: url('../img/find my subtitles/portada.png');
 }
 
 #find_my_subtitles_container .project-content {
 	background-color: rgb(101,146,12);
+}
+
+@keyframes bounce {
+  0%       { bottom: 5px; }
+  25%, 75% { bottom: 15px; }
+  50%      { bottom: 20px; }
+  100%     { bottom: 0; }
+}
+
+@-webkit-keyframes bounce {
+  0%       { bottom: 5px; }
+  25%, 75% { bottom: 15px; }
+  50%      { bottom: 20px; }
+  100%     { bottom: 0; }
 }
