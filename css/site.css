@@ -1,5 +1,11 @@
 :root {
 	--main-link-color: rgb(0,204,106);
+	--logios-color: 4,70,135;
+	--cvbuilder-color: 56,133,70;
+	--streadio-color: 139,6,6;
+	--minibird-color: 173,94,5;
+	--find-my-subtitles-color: 101,146,12;
+	--winnotes-color: 39,106,81;
 }
 
 @font-face {
@@ -149,7 +155,6 @@ a:hover {
 .project-content {
 	width: 100%;
 	min-height: 340px;
-	opacity: 0.8;
     padding: 1rem;
 	border-radius: 4px;
 	transition: margin 0.5s;
@@ -168,7 +173,7 @@ a:hover {
 }
 
 #logios_container .project-content {
-	background-color: rgb(4,70,135);
+	background-color: rgba(var(--logios-color), 0.9);
 }
 
 #cvbuilder_container {
@@ -176,7 +181,7 @@ a:hover {
 }
 
 #cvbuilder_container .project-content {
-	background-color: rgb(56,133,70);
+	background-color: rgba(var(--cvbuilder-color), 0.9);
 }
 
 #streadio_container {
@@ -184,7 +189,7 @@ a:hover {
 }
 
 #streadio_container .project-content {
-	background-color: rgb(139,6,6);
+	background-color: rgba(var(--streadio-color), 0.9);
 }
 
 #minibird_container {
@@ -192,15 +197,7 @@ a:hover {
 }
 
 #minibird_container .project-content {
-	background-color: rgb(173,94,5);
-}
-
-#winnotes_container {
-	background-image: url(../img/winnotes/portada.png);
-}
-
-#winnotes_container .project-content {
-	background-color: rgb(39,106,81);
+	background-color: rgba(var(--minibird-color), 0.9);
 }
 
 #find_my_subtitles_container {
@@ -208,7 +205,15 @@ a:hover {
 }
 
 #find_my_subtitles_container .project-content {
-	background-color: rgb(101,146,12);
+	background-color: rgba(var(--find-my-subtitles-color), 0.9);
+}
+
+#winnotes_container {
+	background-image: url(../img/winnotes/portada.png);
+}
+
+#winnotes_container .project-content {
+	background-color: rgba(var(--winnotes-color), 0.9);
 }
 
 @keyframes bounce {

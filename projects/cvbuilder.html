@@ -14,12 +14,12 @@
 		</header>
 		<div id="main_content" class="pt-4">
 			<h1 class="display-3 quicksand text-center">CVBuilder</h1>
-			<div class="card text-white bg-semitransparent-50 border-dark my-3 text-center w-80 mx-auto">
+			<div class="card project-legend bg-cvbuilder-50">
 				<div class="card-body">
 					<p class="card-text">Asistente detallado para la creación de curriculum en línea de forma rápida y eficaz.</p>
 				</div>
 			</div>
-			<div class="row text-center text-md-start py-4">
+			<div class="row text-center text-md-start">
 				<div class="col-12 col-md-6">
 					<a href="../img/cvbuilder/portada.jpg" target="_blank" rel="noreferrer" title="Portada">
 						<div class="img-hover-zoom rounded">
@@ -27,7 +27,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-12 col-md-6 pt-4 pt-md-0">
+				<div class="col-12 col-md-6">
 					<p class="border-bottom border-dark bg-semitransparent-30 py-1">PORTADA DE INICIO</p>
 					<p class="card-text pre-line">
 						Existe una versión alternativa del proyecto utilizando React y Asp.NET Core Web API:
@@ -37,7 +37,8 @@
 					</p>
 				</div>
 			</div>
-			<div class="row text-center text-md-start py-4">
+			<div class="project-separator"></div>
+			<div class="row text-center text-md-start">
 				<div class="col-12 col-md-6">
 					<a href="../img/cvbuilder/login_registro.jpg" target="_blank" rel="noreferrer" title="Inicio de sesión y registro">
 						<div class="img-hover-zoom rounded">
@@ -45,77 +46,151 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-12 col-md-6 pt-4 pt-md-0">
-					<p class="border-bottom border-dark bg-semitransparent-30 py-1">PANTALLA PRINCIPAL (CON RESULTADOS)</p>
+				<div class="col-12 col-md-6">
+					<p class="border-bottom border-dark bg-semitransparent-30 py-1">LOGIN Y REGISTRO</p>
 					<p class="pre-line">
-						En la pantalla principal es posible buscar ejercicios áreas temáticas (polinomios, matrices, etc.). Los resultados se pueden filtrar para mostrarse todos o solamente aquellos que aún no se han resuelto.
+						En esta pantalla te encontrarás con la posibilidad de registrarte de forma tradicional usando una cuenta de correo y contraseña. Como alternativa puedes utilizar cuentas externas como Github, LinkedIn, Microsoft o Google.
 						
-						En caso de querer explorar todas las áreas temáticas existentes, hay un botón para navegar directamente por ellas. Queda a tu gusto.
+						Los datos extraidos de esas cuentas se utilizaran automáticamente para rellenar algunos campos del curriculum.
 					</p>
 				</div>
 			</div>
-			<div class="row text-center text-md-start py-4">
+			<div class="project-separator"></div>
+			<div class="row text-center text-md-start">
 				<div class="col-12 col-md-6">
-					<a href="../img/logios/portada.png" target="_blank" rel="noreferrer" title="Portada">
-						<div class="img-hover-zoom rounded">
-							<img class="img-fluid" src="../img/logios/perfil.png" alt="logios_perfil">
+					<div class="card bg-semitransparent-50 border-dark text-center">
+						<div class="card-body p-0">
+							<a href="../img/cvbuilder/detalles_personales.jpg" target="_blank" rel="noreferrer" title="Detalles personales">
+								<div class="img-hover-zoom rounded">
+									<img class="img-fluid" src="../img/cvbuilder/detalles_personales.jpg" alt="cvbuilder_detalles_personales">
+								</div>
+							</a>
 						</div>
-					</a>
-				</div>
-				<div class="col-12 col-md-6 pt-4 pt-md-0">
-					<p class="border-bottom border-dark bg-semitransparent-30 py-1">CONFIGURACIÓN DE USUARIO</p>
-					<ul>
-						<li class="mb-1"><u>Administrar perfil</u>: se pueden cambiar algunos datos personales (nombre de usuario, contraseña y avatar).</li>
-						<li class="mb-1"><u>Trofeos y puntos</u>: contiene todos los trofeos logrados con sus correspondientes puntos.</li>
-						<li class="mb-1"><u>Estadísticas de ejercicios</u>: presenta un esquema con las áreas temáticas e informa, de cada una, cuantas has resuelto hasta el momento.</li>
-						<li class="mb-1"><u>Ver trofeos</u>: muestra los detalles de cada trofeo (conseguidos y por conseguir).</li>
-						<li class="mb-1"><u>Ejercicios favoritos</u>: se muestran solo aquellos ejercicios guardados mediante la estrella de favoritos.</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row py-4">
-				<div class="col-12 col-md-10 offset-md-1">
-					<div class="card carousel-container bg-semitransparent-50 border-dark">
-						<div class="card-body carousel-gallery">
-							<img class="img-fluid d-block" src="../img/logios/ejercicio.png" alt="logios_ejercicio">
-							<!-- <img class="img-fluid" src="../img/logios/ver_desarrollo.png" alt="logios_ver_desarrollo"> -->
-							<!-- <img class="img-fluid" src="../img/logios/desarrollo.png" alt="logios_desarrollo"> -->
-							<i class="bi-arrow-left-square-fill carousel-arrow left"></i>
-							<i class="bi-arrow-right-square-fill carousel-arrow right"></i>
-						</div>
-						<div class="card-footer">Ejercicio</div>
+						<div class="card-footer">DETALLES PERSONALES</div>
 					</div>
-					<!-- <div class="carousel-container rounded"> -->
-						<!-- <img class="img-fluid" src="../img/logios/ejercicio.png" alt="logios_ejercicio"> -->
-						<!-- <i class="bi-arrow-left-square-fill carousel-arrow left"></i> -->
-						<!-- <i class="bi-arrow-right-square-fill carousel-arrow right"></i> -->
-					<!-- </div> -->
+					<p class="pre-line text-center">
+						Cada sección esta agrupada por pestañas donde se completa y guarda la información modularmente.
+						Se puede editar o borrar además de hacer cada bloque visible o no visible (esta característica se aplica también para la sección entera).
+					</p>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col carousel-grid">
-					<img class="img-fluid rounded active" src="../img/logios/ejercicio.png" alt="logios_ejercicio" title="Ejercicio" data-title="Ejercicio">
-					<img class="img-fluid rounded" src="../img/logios/ver_desarrollo.png" alt="logios_ver_desarrollo" title="Ver desarrollo" data-title="Ver desarrollo">
-					<img class="img-fluid rounded" src="../img/logios/desarrollo.png" alt="logios_desarrollo" title="Desarrollo" data-title="Desarrollo">
-				</div>
-			</div>
-			<p class="pre-line text-center">
-				La pantalla de cada ejercicio está dividida en tres partes: enunciado, desarrollo y solución. El desarrollo sólo se mostrará si presionas su correspondiente botón pero, al hacerlo, perderás la posibilidad de ganar puntos por ese ejercicio.
-
-				La primera vez que ingresas a la pantalla de ejercicio verás una visita guiada para conocer cada funcionalidad.
-			</p>
-			<div class="row text-center text-md-start py-4">
 				<div class="col-12 col-md-6">
-					<a href="../img/logios/trofeo.png" target="_blank" rel="noreferrer" title="Trofeo">
+					<div class="row">
+						<div class="col">
+							<div class="card carousel-container bg-semitransparent-50 border-dark">
+								<div class="card-body carousel-gallery">
+									<img class="img-fluid d-block" src="../img/cvbuilder/estudios.jpg" alt="cvbuilder_estudios">
+									<i class="bi-arrow-left-square-fill carousel-arrow left"></i>
+									<i class="bi-arrow-right-square-fill carousel-arrow right"></i>
+								</div>
+								<div class="card-footer text-uppercase">Estudios</div>
+							</div>
+							<!-- <div class="carousel-container rounded"> -->
+								<!-- <img class="img-fluid" src="../img/logios/ejercicio.png" alt="logios_ejercicio"> -->
+								<!-- <i class="bi-arrow-left-square-fill carousel-arrow left"></i> -->
+								<!-- <i class="bi-arrow-right-square-fill carousel-arrow right"></i> -->
+							<!-- </div> -->
+						</div>
+					</div>
+					<div class="row d-none d-md-block">
+						<div class="col carousel-grid pt-2">
+							<img class="img-fluid rounded active" src="../img/cvbuilder/estudios.jpg" alt="cvbuilder_estudios" title="Estudios" data-title="Estudios">
+							<img class="img-fluid rounded" src="../img/cvbuilder/certificados.jpg" alt="cvbuilder_certificados" title="Certificados y cursos" data-title="Certificados y cursos">
+							<img class="img-fluid rounded" src="../img/cvbuilder/experiencia_laboral.jpg" alt="cvbuilder_experiencia_laboral" title="Experiencia laboral" data-title="Experiencia laboral">
+							<img class="img-fluid rounded" src="../img/cvbuilder/idiomas.jpg" alt="cvbuilder_idiomas" title="Idiomas" data-title="Idiomas">
+							<img class="img-fluid rounded" src="../img/cvbuilder/habilidades.jpg" alt="cvbuilder_habilidades" title="Habilidades" data-title="Habilidades">
+							<img class="img-fluid rounded" src="../img/cvbuilder/intereses.jpg" alt="cvbuilder_intereses" title="Intereses" data-title="Intereses">
+							<img class="img-fluid rounded" src="../img/cvbuilder/referencias_personales.jpg" alt="cvbuilder_referencias_personales" title="Referencias personales" data-title="Referencias personales">
+							<img class="img-fluid rounded" src="../img/cvbuilder/secciones_personalizadas.jpg" alt="cvbuilder_secciones_personalizadas" title="Secciones personalizadas" data-title="Secciones personalizadas">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="project-separator"></div>
+			<div class="row text-center text-md-start">
+				<div class="col-12 col-md-6">
+					<a href="../img/cvbuilder/cambiar_plantilla.png" target="_blank" rel="noreferrer" title="Cambiar plantilla">
 						<div class="img-hover-zoom rounded">
-							<img class="img-fluid" src="../img/logios/trofeo.png" alt="logios_trofeo">
+							<img class="img-fluid" src="../img/cvbuilder/cambiar_plantilla.jpg" alt="cvbuilder_cambiar_plantilla">
 						</div>
 					</a>
 				</div>
-				<div class="col-12 col-md-6 pt-4 pt-md-0">
-					<p class="border-bottom border-dark bg-semitransparent-30 py-1">VISUALIZACIÓN DE TROFEO</p>
+				<div class="col-12 col-md-6">
+					<p class="border-bottom border-dark bg-semitransparent-30 py-1">CAMBIO DE PLANTILLA</p>
 					<p class="pre-line">
-						Cada vez que se cumpla una determinada cantidad de ejercicios resueltos, ganarás un trofeo que te otorgará puntos (a menos que hayas visto el desarrollo) y compartir tu logro por las redes sociales.
+						Este menú permite alternar entre las tres plantillas disponibles para el curriculum (classic, elegant, modern). La aplicación es automática. Aparece tanto en la pantalla de edición como en la pantalla de finalizado de cv.
+					</p>
+				</div>
+			</div>
+			<div class="project-separator"></div>
+			<div class="row">
+				<div class="col-12 col-md-9 m-auto">
+					<div class="card p-0 bg-semitransparent-50 border-dark text-center overflow-hidden">
+						<div class="card-body p-0">
+							<a href="../img/cvbuilder/cv_completado.jpg" target="_blank" rel="noreferrer" title="CV completado">
+								<div class="img-hover-zoom">
+									<img class="img-fluid rounded" src="../img/cvbuilder/cv_completado.jpg" alt="cvbuilder_cv_completado">
+								</div>
+							</a>
+						</div>
+						<div class="card-footer">OPCIONES DE GUARDADO DE CV</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-4">
+				<div class="col-12 col-md-9 mx-auto">
+					<p class="text-center">
+						Aquí aparecen tres opciones:
+						<ul>
+							<li class="pb-2"><i>Imprimir:</i> prepara el documento para imprimir directamente a papel o hacer uso de la generación automática de archivo pdf integrada en los navegadores basados en chromium.</li>
+							<li class="pb-2"><i>Cambiar plantilla:</i> como se mencionó anteriormente, permite alternar entre las plantilla disponibles.</li>
+							<li><i>Descargar como pdf:</i> se prepara el documento para descargar el curriculum como archivo pdf, listo para enviar por correo.</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			<div class="project-separator"></div>
+			<div class="row">
+				<div class="col-12 col-md-4 py-1 py-md-0">
+					<div class="card rounded bg-semitransparent-50 border-dark p-0 text-center overflow-hidden">
+						<div class="card-body p-0">
+							<a href="../img/cvbuilder/templates/classic.jpg" target="_blank" rel="noreferrer">
+								<div class="img-hover-zoom">
+									<img class="img-fluid" src="../img/cvbuilder/templates/classic.jpg" alt="cvbuilder_classic_template" />
+								</div>
+							</a>
+						</div>
+						<div class="card-footer">CLASSIC</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 py-1 py-md-0">
+					<div class="card rounded bg-semitransparent-50 border-dark p-0 text-center overflow-hidden">
+						<div class="card-body p-0">
+							<a href="../img/cvbuilder/templates/elegant.jpg" target="_blank" rel="noreferrer">
+								<div class="img-hover-zoom">
+									<img class="img-fluid" src="../img/cvbuilder/templates/elegant.jpg" alt="cvbuilder_elegant_template" />
+								</div>
+							</a>
+						</div>
+						<div class="card-footer">ELEGANT</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 py-1 py-md-0">
+					<div class="card rounded bg-semitransparent-50 border-dark p-0 text-center overflow-hidden">
+						<div class="card-body p-0">
+							<a href="../img/cvbuilder/templates/modern.jpg" target="_blank" rel="noreferrer">
+								<div class="img-hover-zoom">
+									<img class="img-fluid" src="../img/cvbuilder/templates/modern.jpg" alt="cvbuilder_modern_template" />
+								</div>
+							</a>
+						</div>
+						<div class="card-footer">MODERN</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-4">
+				<div class="col-12 col-md-9 mx-auto">
+					<p class="text-center">
+						Tres estilos diferentes para que utilices el que más se adapte a ti y la información que quieras que destaque. Podrás cambiar la plantilla en cualquier momento y los datos que hayas ingresado se acomodarán automáticamente a la que se encuentre activa.
 					</p>
 				</div>
 			</div>
