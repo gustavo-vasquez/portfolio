@@ -1,5 +1,6 @@
 (function() {
 	let anchorLinks = {
+		home: "index.html",
 		about: "about.html",
 		contact: "contact.html",
 		logios: "projects/logios.html",
@@ -18,6 +19,7 @@
 		const UP_LEVEL_PATH = "../";
 		
 		if(initialPath.startsWith(PROJECTS_PATH)) {
+			anchorLinks.home = UP_LEVEL_PATH + anchorLinks.home;
 			anchorLinks.about = UP_LEVEL_PATH + anchorLinks.about;
 			anchorLinks.contact = UP_LEVEL_PATH + anchorLinks.contact;
 			anchorLinks.logios = anchorLinks.logios.substr(PROJECTS_PATH.length);
@@ -36,9 +38,10 @@
 	function getHeaderHTML() {
 		return `<div class="row">
 			<div class="col-6">
-				<button id="projects_toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#project_list" aria-controls="project_list" aria-expanded="false" aria-label="Toggle projects">
+				<button id="projects_toggler" class="navbar-toggler d-block" type="button" data-bs-toggle="collapse" data-bs-target="#project_list" aria-controls="project_list" aria-expanded="false" aria-label="Toggle projects">
 					Proyectos<span class="dropdown-toggle align-middle"></span>
 				</button>
+				<a href=${anchorLinks.home} class="animate">Inicio</a>
 			</div>
 			<div class="col-6 text-end">
 				<a href=${anchorLinks.about} class="animate">Acerca de mí</a>

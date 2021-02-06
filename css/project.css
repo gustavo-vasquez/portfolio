@@ -42,7 +42,7 @@
 	color: white;
 	text-align: center;
 	border-color: black;
-	margin: 2rem auto;
+	margin: 3rem auto;
 }
 
 .project-separator {
@@ -53,9 +53,9 @@
 	border-bottom: 1px dashed #41464b;
 }
 
-/* #main_content > .row { */
-	/* margin-top: 8rem; */
-/* } */
+.description-title {
+	text-transform: uppercase;
+}
 
 .pre-line {
 	white-space: pre-line;
@@ -148,6 +148,7 @@
 
 .carousel-grid {
 	text-align: center;
+	padding-top: 1rem;
 }
 
 .carousel-grid img {
