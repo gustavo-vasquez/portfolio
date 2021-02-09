@@ -38,10 +38,10 @@
 	function getHeaderHTML() {
 		return `<div class="row">
 			<div class="col-6">
+				<a href=${anchorLinks.home} class="animate">Inicio</a>
 				<button id="projects_toggler" class="navbar-toggler d-block" type="button" data-bs-toggle="collapse" data-bs-target="#project_list" aria-controls="project_list" aria-expanded="false" aria-label="Toggle projects">
 					Proyectos<span class="dropdown-toggle align-middle"></span>
 				</button>
-				<a href=${anchorLinks.home} class="animate">Inicio</a>
 			</div>
 			<div class="col-6 text-end">
 				<a href=${anchorLinks.about} class="animate">Acerca de mí</a>

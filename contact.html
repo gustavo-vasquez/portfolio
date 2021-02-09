@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Formulario de contacto - Portfolio de Gustavo Vasquez</title>
+		<link rel="stylesheet" type="text/css" href="lib/css/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="lib/css/bootstrap-icons/bootstrap-icons.css">
+		<link rel="stylesheet" type="text/css" href="css/site.css">
+		<link rel="stylesheet" type="text/css" href="css/contact.css">
+	</head>
+	<body class="container">
+		<header></header>
+		<h3>Formulario de contacto</h3>
+		<hr>
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<div class="card bg-semitransparent-50 border-dark">
+					<div class="card-body">
+						<form action="https://formspree.io/f/mknpeevj" method="POST" class="form-group">
+							<legend class="fs-5 pb-3">Si te interesa contratarme, puedes comunicarte conmigo escribiendo aquí:</legend>
+							<input type="email" name="_replyto" placeholder="Correo electrónico" class="form-control bg-semitransparent-50" required />
+							<input type="text" name="name" placeholder="Nombre y apellido" class="form-control bg-semitransparent-50" required />
+							<input type="text" name="subject" placeholder="Asunto" class="form-control bg-semitransparent-50" required />
+							<textarea rows="8" name="body" placeholder="Escribe tu mensaje..." class="form-control bg-semitransparent-50" required></textarea>
+							<button type="submit" class="btn btn-success">Enviar mensaje</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer></footer>
+		<script type="text/javascript" src="lib/js/bootstrap/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/site.js"></script>
+	</body>
+</html>

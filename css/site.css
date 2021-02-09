@@ -39,8 +39,17 @@ body:before {
 }
 
 header {
-	padding: 1rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	font-size: 1rem;
+}
+
+.bg-semitransparent-50 {
+	background-color: rgb(33 37 41 / 50%);
+}
+
+.bg-semitransparent-30 {
+	background-color: rgb(33 37 41 / 20%);
 }
 
 #projects_toggler {
@@ -52,7 +61,13 @@ header {
 }
 
 #projects_toggler:focus {
-	box-shadow: 0 0 0 0.1rem;
+	box-shadow: 0 0 0 0rem;
+	color: white;
+}
+
+#project_list {
+	width: -moz-fit-content;
+	width: fit-content;
 }
 
 header > .row a {

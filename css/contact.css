@@ -1,0 +1,12 @@
+.form-control {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	color: inherit;
+}
+
+.form-control:focus {
+	background-color: inherit;
+	color: inherit;
+	border-color: var(--main-link-color);
+	box-shadow: 0 0 0 0.25rem rgb(0 204 106 / 25%);
+}
