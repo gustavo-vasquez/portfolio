@@ -8,6 +8,16 @@
 	--winnotes-color: 39,106,81;
 }
 
+::-moz-selection {
+	color: black;
+	background: var(--main-link-color);
+}
+
+::selection {
+	color: black;
+	background: var(--main-link-color);
+}
+
 @font-face {
 	font-family: 'Space Mono';
 	src: url(../fonts/SpaceMono-Regular.ttf) format('truetype');
@@ -26,7 +36,7 @@ body {
 }
 
 body:before {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(../img/background_blurred.jpg) no-repeat center center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(../img/background.jpg) no-repeat center center;
   background-size: cover;
   z-index: -3;
   content: '';
@@ -39,8 +49,8 @@ body:before {
 }
 
 header {
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
 	font-size: 1rem;
 }
 
@@ -79,11 +89,11 @@ header > .row a {
 }
 
 #landing_page {
-	height: calc(100vh - 84.06px);
+	height: calc(100vh - 70.06px);
 }
 
 footer {
-	padding-bottom: 1rem;
+	padding-bottom: 0.5rem;
 }
 
 a {
@@ -119,6 +129,26 @@ a:hover {
 .animate:hover::before {
   transform: scaleX(1);
   transform-origin: center left;
+}
+
+.technologies-wrapper {
+	padding: 0.5rem;
+}
+
+#technologies {
+	margin-top: 3rem;
+}
+
+#technologies .card-body {
+	padding: 0.5rem;
+}
+
+#technologies span {
+	color: #a9a7a7;
+	text-align: center;
+	font-size: 0.8rem;
+	display: block;
+	padding-bottom: 0.5rem;
 }
 
 .social-buttons {
