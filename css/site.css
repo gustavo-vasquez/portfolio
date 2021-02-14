@@ -88,6 +88,10 @@ header > .row a {
 	font-family: 'Quicksand';
 }
 
+.pre-line {
+	white-space: pre-line;
+}
+
 #landing_page {
 	height: calc(100vh - 70.06px);
 }
@@ -238,7 +242,7 @@ a:hover {
 }
 
 #minibird_container {
-	background-image: url(../img/minibird/portada.jpg);
+	background-image: url(../img/minibird/login.jpg);
 }
 
 #minibird_container .project-content {

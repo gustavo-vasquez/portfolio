@@ -45,10 +45,6 @@
 	border-bottom: 1px dashed #41464b;
 }
 
-.pre-line {
-	white-space: pre-line;
-}
-
 .img-hover-zoom {
   height: auto;
   overflow: hidden;
