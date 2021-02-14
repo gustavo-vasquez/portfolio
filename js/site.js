@@ -12,7 +12,7 @@
 	}
 	
 	parseLocalLinks();
-	//console.time('parseLocalLinks');
+	
 	function parseLocalLinks() {
 		const initialPath = location.pathname.substring(location.pathname.indexOf("portfolio-page/") + 15);
 		const PROJECTS_PATH = "projects/";
@@ -33,7 +33,6 @@
 		document.querySelector("header").innerHTML = getHeaderHTML();
 		document.querySelector("footer").innerHTML = getFooterHTML();
 	}
-	//console.timeEnd('parseLocalLinks');
 	
 	function getHeaderHTML() {
 		return `<div class="row">
@@ -78,7 +77,7 @@
 			<hr/>
 			<div class="row">
 			<div class="col-12 col-md-4 pb-3 pb-md-0 text-center text-md-start">
-				<span class="d-block">Gustavo Vasquez</span>
+				<span class="d-block">Gustavo Vasquez Zurita</span>
 				<span class="text-muted">Técnico en desarrollo web</span>
 			</div>
 			<div class="col-12 col-md-4 pb-3 pb-md-0 text-center">
