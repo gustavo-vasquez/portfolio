@@ -9,142 +9,242 @@
 		<link rel="stylesheet" type="text/css" href="../css/site.css">
 		<link rel="stylesheet" type="text/css" href="../css/project.css">
 	</head>
-	<body class="container">
+	<body class="container-fluid">
 		<header>
 		</header>
-		<div id="main_content" class="pt-4">
-			<h1 class="display-3 quicksand text-center">WinNotes</h1>
-			<div class="card project-legend bg-winnotes-50">
-				<div class="card-body">
-					<p class="card-text">Aplicación web para organizar todas tus tareas y no olvidarte de nada.</p>
-					<span><a href="https://github.com/gustavo-vasquez/Proyecto_Notas" class="text-white fs-6" target="_blank" rel="noreferrer">https://github.com/gustavo-vasquez/Proyecto_Notas</a></span>
-				</div>
-			</div>
-			<div class="row text-center text-md-start">
-				<div class="col-12 col-md-6">
-					<a href="../img/winnotes/portada.png" target="_blank" rel="noreferrer" title="Portada">
-						<div class="img-hover-zoom rounded">
-							<img class="img-fluid" src="../img/winnotes/portada.png" alt="winnotes_portada">
+		<div id="winnotes_content">
+			<section id="presentation_section" class="quicksand text-center">
+				<div class="row section-content">
+					<div class="col">
+						<div class="row">
+							<div class="col-12 col-md-10 mx-auto">
+								<img class="img-fluid pb-3" width="150" src="../img/winnotes/logo.png" alt="winnotes_logo" />
+								<h1 class="display-1">WinNotes</h1>
+								<h3 class="my-4">Aplicación web para organizar todas tus tareas y no olvidarte de nada.</h1>
+								<h3 class="mt-4">
+									<i class="bi-github"></i>
+									<a href="https://github.com/gustavo-vasquez/Proyecto_Notas" class="animate text-white align-middle" target="_blank" rel="noreferrer">https://github.com/gustavo-vasquez/Proyecto_Notas</a>
+								</h2>
+							</div>
 						</div>
-					</a>
-				</div>
-				<div class="col-12 col-md-6">
-					<p class="text-uppercase border-bottom border-dark bg-semitransparent-30 py-1 py-md-0">Portada</p>
-					<p class="card-text pre-line">En la página principal te encontrarás con un acceso rápido a las funcionalidades principales de la aplicación:
-					<ul>
-						<li>Crear nueva nota</li>
-						<li>Listado de carpetas</li>
-						<li>Listado de notas</li>
-					</ul>
-					También encontrarás un enlace para registrarte o iniciar sesión. En caso de estar logueado, aparecerá un botón para acceder a tu perfil y accesos a las funcionalidades descritas arriba.
-					</p>
-				</div>
-			</div>
-			<div class="project-separator"></div>
-			<div class="row text-center text-md-start">
-				<div class="col-12 col-md-6">
-					<a href="../img/winnotes/perfil.png" target="_blank" rel="noreferrer" title="Perfil">
-						<div class="img-hover-zoom rounded">
-							<img class="img-fluid" src="../img/winnotes/perfil.png" alt="winnotes_perfil">
+						<div class="row pt-4">
+							<div class="col">
+								<a href="#main_page_section" class="see-next">
+									<i class="bi-arrow-down-circle"></i>
+								</a>
+							</div>
 						</div>
-					</a>
-				</div>
-				<div class="col-12 col-md-6">
-					<p class="text-uppercase border-bottom border-dark bg-semitransparent-30 py-1 py-md-0">Página de perfil</p>
-					<p class="pre-line">En esta pantalla se pueden realizar distintas acciones:
-						<ul>
-							<li>Cambiar el avatar y la contraseña</li>
-							<li>Escribir lo que tengas en mente en el casillero de frase personal y darle color para que destaque a tu modo</li>
-							<li>Visualizar el correo con el que te registraste</li>
-							<li>Acceder a las carpetas y notas</li>
-						</ul>
-					</p>
-				</div>
-			</div>
-			<div class="project-separator"></div>
-			<div class="row text-center text-md-start">
-				<div class="col-12 col-md-6">
-					<div class="card bg-semitransparent-50 border-dark text-center overflow-hidden">
-						<div class="card-body p-0">
-							<a href="../img/winnotes/carpetas.png" target="_blank" rel="noreferrer">
-								<div class="img-hover-zoom">
-									<img class="img-fluid" src="../img/winnotes/carpetas.png" alt="winnotes_carpetas">
-								</div>
-							</a>
-						</div>
-						<div class="card-footer text-uppercase">Vista de carpetas</div>
 					</div>
-					<p class="pre-line text-center">
-						Para una mejor organización, las tareas se agrupan en carpetas así puedes elegir el criterio en el que se dividirán.
-					</p>
 				</div>
-				<div class="col-12 col-md-6">
-					<div class="card bg-semitransparent-50 border-dark text-center overflow-hidden">
-						<div class="card-body p-0">
-							<a href="../img/winnotes/crear_nota.png" target="_blank" rel="noreferrer">
-								<div class="img-hover-zoom">
-									<img class="img-fluid" src="../img/winnotes/crear_nota.png" alt="winnotes_crear_nota">
-								</div>
-							</a>
+			</section>
+			<section id="main_page_section">
+				<div class="row text-center text-md-start section-content">
+					<div class="col">
+						<div class="row">
+							<div class="col-12 col-md-6 m-auto">
+								<a href="../img/winnotes/portada.png" target="_blank" rel="noreferrer">
+									<div class="img-hover-zoom rounded">
+										<img class="img-fluid" src="../img/winnotes/portada.png" alt="winnotes_portada">
+									</div>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 pt-4 pt-md-0 m-auto">
+								<h2 class="section-title">Portada</h2>
+								<hr class="op-1">
+								<p class="pre-line">
+									En la página principal te encontrarás con un acceso rápido a las funcionalidades principales de la aplicación:
+									<ul class="text-start">
+										<li>Crear nueva nota</li>
+										<li>Listado de carpetas</li>
+										<li>Listado de notas</li>
+									</ul>
+								</p>
+							</div>
 						</div>
-						<div class="card-footer text-uppercase">Crear nueva nota</div>
+						<p class="pt-4">
+							También encontrarás un enlace para registrarte o iniciar sesión. En caso de estar logueado, aparecerá un botón para acceder a tu perfil y accesos a las funcionalidades descritas arriba.
+						</p>
+						<div class="row pt-4">
+							<div class="col text-center">
+								<a href="#profile_section" class="see-next">
+									<i class="bi-arrow-down-circle"></i>
+								</a>
+							</div>
+						</div>
 					</div>
-					<p class="pre-line text-center">
-						Tienes todo tipo de opciones a tu disposición al momento de crear notas: elegir carpeta, nombre, detalles, marcar como destacado y, por último, elegir la fecha y hora en la que la aplicación te recordará la tarea.
-					</p>
 				</div>
-			</div>
-			<div class="project-separator"></div>
-			<div class="row text-center text-md-start">
-				<div class="col-12 col-md-6">
-					<div class="card bg-semitransparent-50 border-dark text-center overflow-hidden">
-						<div class="card-body p-0">
-							<a href="../img/winnotes/notas.png" target="_blank" rel="noreferrer">
-								<div class="img-hover-zoom">
-									<img class="img-fluid" src="../img/winnotes/notas.png" alt="winnotes_notas">
-								</div>
-							</a>
+			</section>
+			<section id="profile_section">
+				<div class="row text-center text-md-start section-content">
+					<div class="col">
+						<div class="row">
+							<div class="col-12 col-md-6 m-auto">
+								<a href="../img/winnotes/perfil.png" target="_blank" rel="noreferrer">
+									<div class="img-hover-zoom rounded">
+										<img class="img-fluid" src="../img/winnotes/perfil.png" alt="winnotes_perfil">
+									</div>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 pt-4 pt-md-0 m-auto">
+								<h2 class="section-title">Página de perfil</h2>
+								<hr class="op-1">
+								<p class="pre-line">
+									En esta pantalla se pueden realizar distintas acciones:
+									<ul class="text-start">
+										<li>Cambiar el avatar y la contraseña</li>
+										<li>Escribir lo que tengas en mente en el casillero de frase personal y darle color para que destaque a tu modo</li>
+										<li>Visualizar el correo con el que te registraste</li>
+										<li>Acceder a las carpetas y notas</li>
+									</ul>
+								</p>
+							</div>
 						</div>
-						<div class="card-footer text-uppercase">Vista de notas</div>
+						<div class="row pt-4">
+							<div class="col text-center">
+								<a href="#folders_and_notes_section" class="see-next">
+									<i class="bi-arrow-down-circle"></i>
+								</a>
+							</div>
+						</div>
 					</div>
-					<p class="pre-line text-center">
-						Puedes ver las notas que hayas creado organizada por carpetas o todas juntas, tanto las pendientes como las que ya están completadas.
+				</div>
+			</section>
+			<section id="folders_and_notes_section">
+				<div class="row text-center text-md-start section-content">
+					<div class="col">
+						<div class="row">
+							<div class="col-12 col-md-6">
+								<div class="card bg-semitransparent-50 border-dark text-center overflow-hidden">
+									<div class="card-body p-0">
+										<a href="../img/winnotes/carpetas.png" target="_blank" rel="noreferrer">
+											<div class="img-hover-zoom">
+												<img class="img-fluid" src="../img/winnotes/carpetas.png" alt="winnotes_carpetas">
+											</div>
+										</a>
+									</div>
+									<div class="card-footer text-uppercase fs-5">Vista de carpetas</div>
+								</div>
+								<p class="pre-line">
+									Para una mejor organización, las tareas se agrupan en carpetas así puedes elegir el criterio en el que se dividirán.
+								</p>
+							</div>
+							<div class="col-12 col-md-6 pt-4 pt-md-0">
+								<div class="card bg-semitransparent-50 border-dark text-center overflow-hidden">
+									<div class="card-body p-0">
+										<a href="../img/winnotes/crear_nota.png" target="_blank" rel="noreferrer">
+											<div class="img-hover-zoom">
+												<img class="img-fluid" src="../img/winnotes/crear_nota.png" alt="winnotes_crear_nota">
+											</div>
+										</a>
+									</div>
+									<div class="card-footer text-uppercase fs-5">Crear nueva nota</div>
+								</div>
+								<p class="pre-line">
+									Tienes todo tipo de opciones a tu disposición al momento de crear notas: elegir carpeta, nombre, detalles, marcar como destacado y, por último, elegir la fecha y hora en la que la aplicación te recordará la tarea.
+								</p>
+							</div>
+						</div>
+						<div class="row pt-4">
+							<div class="col text-center">
+								<a href="#notes_and_alarm_section" class="see-next">
+									<i class="bi-arrow-down-circle"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="notes_and_alarm_section">
+				<div class="row text-center text-md-start section-content">
+					<div class="col">
+						<div class="row">
+							<div class="col-12 col-md-6">
+								<div class="card bg-semitransparent-50 border-dark text-center overflow-hidden">
+									<div class="card-body p-0">
+										<a href="../img/winnotes/notas.png" target="_blank" rel="noreferrer">
+											<div class="img-hover-zoom">
+												<img class="img-fluid" src="../img/winnotes/notas.png" alt="winnotes_notas">
+											</div>
+										</a>
+									</div>
+									<div class="card-footer text-uppercase fs-5">Vista de notas</div>
+								</div>
+								<p class="pre-line">
+									Puedes ver las notas que hayas creado organizada por carpetas o todas juntas, tanto las pendientes como las que ya están completadas.
 
-						Junto a cada nota tienes la posibilidad de editarlas en cualquier momento: cambiar de carpeta, de fecha, destacar o no y completarla manualmente.
-					</p>
-				</div>
-				<div class="col-12 col-md-6">
-					<div class="card bg-semitransparent-50 border-dark text-center overflow-hidden">
-						<div class="card-body p-0">
-							<a href="../img/winnotes/alarma.png" target="_blank" rel="noreferrer">
-								<div class="img-hover-zoom">
-									<img class="img-fluid" src="../img/winnotes/alarma.png" alt="winnotes_alarma">
+									Junto a cada nota tienes la posibilidad de editarlas en cualquier momento: cambiar de carpeta, de fecha, destacar o no y completarla manualmente.
+								</p>
+							</div>
+							<div class="col-12 col-md-6 pt-4 pt-md-0">
+								<div class="card bg-semitransparent-50 border-dark text-center overflow-hidden">
+									<div class="card-body p-0">
+										<a href="../img/winnotes/alarma.png" target="_blank" rel="noreferrer">
+											<div class="img-hover-zoom">
+												<img class="img-fluid" src="../img/winnotes/alarma.png" alt="winnotes_alarma">
+											</div>
+										</a>
+									</div>
+									<div class="card-footer text-uppercase fs-5">Notificación de alarma</div>
 								</div>
-							</a>
+								<p class="pre-line">
+									Una vez se cumpla la fecha y hora estipulada (si no la has marcado como completada previamente), aparecerá una notificación sonora con el título y descripción de la nota.
+								</p>
+							</div>
 						</div>
-						<div class="card-footer text-uppercase">Notificación de alarma</div>
-					</div>
-					<p class="pre-line text-center">
-						Una vez se cumpla la fecha y hora estipulada (si no la has marcado como completada previamente), aparecerá una notificación sonora con el título y descripción de la nota.
-					</p>
-				</div>
-			</div>
-			<div id="technologies" class="row justify-content-center justify-content-md-end">
-				<div class="col-auto">
-					<div class="card bg-semitransparent-30 border-dark">
-						<div class="card-body">
-							<span class="d-md-inline-block pb-md-0">Hecho con: </span>
-							<img class="img-fluid rounded" width="24" src="../img/technologies/html5.png" alt="html5_icon" title="HTML 5" />
-							<img class="img-fluid rounded" width="24" src="../img/technologies/css3.png" alt="css3_icon" title="CSS 3" />
-							<img class="img-fluid rounded" width="24" src="../img/technologies/javascript.webp" alt="javascript_icon" title="Javascript" />
-							<img class="img-fluid rounded" width="24" src="../img/technologies/jquery.png" alt="jquery_icon" title="JQuery" />
-							<img class="img-fluid rounded" width="24" src="../img/technologies/csharp.png" alt="csharp_icon" title="C#" />
-							<img class="img-fluid rounded" width="24" src="../img/technologies/net_framework.jpg" alt="net_framework_icon" title=".NET Framework" />
-							<img class="img-fluid rounded" width="24" src="../img/technologies/sql_server.png" alt="sql_server_icon" title="SQL Server" />
+						<div class="row pt-4">
+							<div class="col text-center">
+								<a href="#technologies" class="see-next">
+									<i class="bi-arrow-down-circle"></i>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
+			<section id="technologies">
+				<div class="row section-content">
+					<div class="col-auto">
+						<span class="fs-1 text-center section-title pb-2">Programado en: </span>
+						<div class="row justify-content-center text-center py-4">
+							<div class="col-auto py-3">
+								<img class="img-fluid rounded" width="96" src="../img/technologies/html5.png" alt="html5_icon" title="HTML 5" />
+								<span class="fs-2">HTML5</span>
+							</div>
+							<div class="col-auto py-3">
+								<img class="img-fluid rounded" width="96" src="../img/technologies/css3.png" alt="css3_icon" title="CSS 3" />
+								<span class="fs-2">CSS3</span>
+							</div>
+							<div class="col-auto py-3">
+								<img class="img-fluid rounded" width="96" src="../img/technologies/javascript.webp" alt="javascript_icon" title="Javascript" />
+								<span class="fs-2">Javascript</span>
+							</div>
+							<div class="col-auto py-3">
+								<img class="img-fluid rounded" width="96" src="../img/technologies/jquery.png" alt="jquery_icon" title="JQuery" />
+								<span class="fs-2">JQuery</span>
+							</div>
+							<div class="col-auto py-3">
+								<img class="img-fluid rounded" width="96" src="../img/technologies/csharp.png" alt="csharp_icon" title="C#" />
+								<span class="fs-2">C#</span>
+							</div>
+							<div class="col-auto py-3">
+								<img class="img-fluid rounded" width="96" src="../img/technologies/net_framework.jpg" alt="net_framework_icon" title=".NET Framework" />
+								<span class="fs-2">.NET Framework</span>
+							</div>
+							<div class="col-auto py-3">
+								<img class="img-fluid rounded" width="96" src="../img/technologies/sql_server.png" alt="sql_server_icon" title="SQL Server" />
+								<span class="fs-2">SQL Server</span>
+							</div>
+						</div>
+						<div class="row pt-4">
+							<div class="col text-center">
+								<a href="#winnotes_content" class="see-next" title="Ir arriba">
+									<i class="bi-arrow-up-circle"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 		<footer>
 		</footer>

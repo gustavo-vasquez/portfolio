@@ -3,115 +3,217 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="icon" href="../icons/logios.ico" />
 		<title>Logios - Portfolio de Gustavo Vasquez</title>
 		<link rel="stylesheet" type="text/css" href="../lib/css/bootstrap/bootstrap.min.css">
 		<link rel="stylesheet" href="../lib/css/bootstrap-icons/bootstrap-icons.css">
 		<link rel="stylesheet" type="text/css" href="../css/site.css">
 		<link rel="stylesheet" type="text/css" href="../css/project.css">
 	</head>
-	<body class="container">
+	<body class="container-fluid">
 		<header></header>
-		<div id="main_content" class="pt-4">
-			<h1 class="display-3 quicksand text-center">Logios</h1>
-			<h3 class="quicksand text-muted text-center">Sapere aude</h3>
-			<div class="card project-legend bg-logios-50">
-				<div class="card-body">
-					<p class="card-text">Aplicación web educativa capaz de almacenar ejercicios matemáticos completos de distinta complejidad con su proceso de desarrollo y resolución.</p>
-					<span><a href="https://github.com/gustavo-vasquez/Logios_Repo" class="text-white fs-6" target="_blank" rel="noreferrer">https://github.com/gustavo-vasquez/Logios_Repo</a></span>
-				</div>
-			</div>
-			<div class="row text-center text-md-start">
-				<div class="col-12 col-md-6">
-					<a href="../img/logios/portada.png" target="_blank" rel="noreferrer" title="Portada">
-						<div class="img-hover-zoom rounded">
-							<img class="img-fluid" src="../img/logios/portada.png" alt="logios_portada">
+		<div id="logios_content">
+			<section id="presentation_section" class="quicksand text-center">
+				<div class="row section-content">
+					<div class="col">
+						<div class="row">
+							<div class="col-12 col-md-10 mx-auto">
+								<img class="img-fluid pb-3" width="150" src="../img/logios/logo.png" alt="logios_logo" />
+								<h1 class="display-1">Logios</h1>
+								<h3 class="display-5 text-muted">Sapere aude</h3>
+								<h3 class="my-4">Aplicación web educativa capaz de almacenar ejercicios matemáticos completos de distinta complejidad con su proceso de desarrollo y resolución.</h1>
+								<h3 class="mt-4">
+									<i class="bi-github"></i>
+									<a href="https://github.com/gustavo-vasquez/Logios_Repo" class="animate text-white align-middle" target="_blank" rel="noreferrer">https://github.com/gustavo-vasquez/Logios_Repo</a>
+								</h2>
+							</div>
 						</div>
-					</a>
-				</div>
-				<div class="col-12 col-md-6 pt-4 pt-md-0">
-					<p class="text-uppercase border-bottom border-dark bg-semitransparent-30 py-1">Pantalla principal (con resultados)</p>
-					<p class="pre-line">En la pantalla principal es posible buscar ejercicios por áreas temáticas (polinomios, matrices, etc.). Los resultados se pueden filtrar para mostrarse todos o solamente aquellos que aún no se han resuelto.
-						
-						En caso de querer explorar todas las áreas temáticas existentes, hay un botón para navegar directamente por ellas. Queda a tu gusto.
-					</p>
-				</div>
-			</div>
-			<div class="project-separator"></div>
-			<div class="row text-center text-md-start">
-				<div class="col-12 col-md-6">
-					<a href="../img/logios/perfil.png" target="_blank" rel="noreferrer" title="Perfil">
-						<div class="img-hover-zoom rounded">
-							<img class="img-fluid" src="../img/logios/perfil.png" alt="logios_perfil">
+						<div class="row pt-4">
+							<div class="col">
+								<a href="#main_page_section" class="see-next">
+									<i class="bi-arrow-down-circle"></i>
+								</a>
+							</div>
 						</div>
-					</a>
-				</div>
-				<div class="col-12 col-md-6 pt-4 pt-md-0">
-					<p class="text-uppercase border-bottom border-dark bg-semitransparent-30 py-1">Configuración de usuario</p>
-					<ul>
-						<li class="mb-1"><u>Administrar perfil</u>: se pueden cambiar algunos datos personales (nombre de usuario, contraseña y avatar).</li>
-						<li class="mb-1"><u>Trofeos y puntos</u>: contiene todos los trofeos logrados con sus correspondientes puntos.</li>
-						<li class="mb-1"><u>Estadísticas de ejercicios</u>: presenta un esquema con las áreas temáticas e informa, de cada una, cuantas has resuelto hasta el momento.</li>
-						<li class="mb-1"><u>Ver trofeos</u>: muestra los detalles de cada trofeo (conseguidos y por conseguir).</li>
-						<li class="mb-1"><u>Ejercicios favoritos</u>: se muestran solo aquellos ejercicios guardados mediante la estrella de favoritos.</li>
-					</ul>
-				</div>
-			</div>
-			<div class="project-separator"></div>
-			<div class="row">
-				<div class="col-12 col-md-9 mx-auto">
-					<div class="card carousel-container bg-semitransparent-50 border-dark">
-						<div class="card-body carousel-gallery">
-							<img class="img-fluid d-block" src="../img/logios/ejercicio.png" alt="logios_ejercicio">
-							<i class="bi-arrow-left-square-fill carousel-arrow left"></i>
-							<i class="bi-arrow-right-square-fill carousel-arrow right"></i>
-						</div>
-						<div class="card-footer text-uppercase">Ejercicio</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col carousel-grid">
-					<img class="img-fluid rounded active" src="../img/logios/ejercicio.png" alt="logios_ejercicio" title="Ejercicio" data-title="Ejercicio">
-					<img class="img-fluid rounded" src="../img/logios/ver_desarrollo.png" alt="logios_ver_desarrollo" title="Ver desarrollo" data-title="Ver desarrollo">
-					<img class="img-fluid rounded" src="../img/logios/desarrollo.png" alt="logios_desarrollo" title="Desarrollo" data-title="Desarrollo">
+			</section>
+			<section id="main_page_section">
+				<div class="row text-center text-md-start section-content">
+					<div class="col">
+						<div class="row">
+							<div class="col-12 col-md-6 m-auto">
+								<a href="../img/logios/portada.png" target="_blank" rel="noreferrer">
+									<div class="img-hover-zoom rounded">
+										<img class="img-fluid" src="../img/logios/portada.png" alt="logios_portada">
+									</div>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 pt-4 pt-md-0 m-auto">
+								<h2 class="section-title">Pantalla principal (con resultados)</h2>
+								<hr class="op-1">
+								<p class="pre-line">
+									En la pantalla principal es posible buscar ejercicios por áreas temáticas (polinomios, matrices, etc.). Los resultados se pueden filtrar para mostrarse todos o solamente aquellos que aún no se han resuelto.
+									
+									En caso de querer explorar todas las áreas temáticas existentes, hay un botón para navegar directamente por ellas. Queda a tu gusto.
+								</p>
+							</div>
+						</div>
+						<div class="row pt-4">
+							<div class="text-center">
+								<a href="#profile_section" class="see-next">
+									<i class="bi-arrow-down-circle"></i>
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<p class="pre-line text-center">
-				Cada ejercicio se presenta dividido en tres partes: enunciado, desarrollo y solución. El desarrollo sólo se mostrará si presionas el botón "Visualizar desarrollo" pero, al hacerlo, perderás la posibilidad de ganar puntos por ese ejercicio.
+			</section>
+			<section id="profile_section">
+				<div class="row text-center text-md-start section-content">
+					<div class="col">
+						<div class="row">
+							<div class="col-12 col-md-6 m-auto">
+								<a href="../img/logios/perfil.png" target="_blank" rel="noreferrer">
+									<div class="img-hover-zoom rounded">
+										<img class="img-fluid" src="../img/logios/perfil.png" alt="logios_perfil">
+									</div>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 pt-4 pt-md-0 m-auto">
+								<h2 class="section-title">Configuración de usuario</h2>
+								<hr class="op-1">
+								<ul class="pt-4 text-start">
+									<li class="mb-1"><span class="badge bg-logios text-uppercase">Administrar perfil</span>: se pueden cambiar algunos datos personales (nombre de usuario, contraseña y avatar).</li>
+									<li class="mb-1"><span class="badge bg-logios text-uppercase">Trofeos y puntos</span>: contiene todos los trofeos logrados con sus correspondientes puntos.</li>
+									<li class="mb-1"><span class="badge bg-logios text-uppercase">Estadísticas de ejercicios</span>: presenta un esquema con las áreas temáticas e informa, de cada una, cuantas has resuelto hasta el momento.</li>
+									<li class="mb-1"><span class="badge bg-logios text-uppercase">Ver trofeos</span>: muestra los detalles de cada trofeo (conseguidos y por conseguir).</li>
+									<li class="mb-1"><span class="badge bg-logios text-uppercase">Ejercicios favoritos</span>: se muestran solo aquellos ejercicios guardados mediante la estrella de favoritos.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row pt-4">
+							<div class="col text-center">
+								<a href="#exercise_section" class="see-next">
+									<i class="bi-arrow-down-circle"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="exercise_section">
+				<div class="row text-center text-md-start section-content">
+					<div class="col">
+						<div class="row">
+							<div class="col-12 col-md-6 pt-4 pt-md-0 m-auto">
+								<div class="card carousel-container bg-semitransparent-50 border-dark">
+									<div class="card-body carousel-gallery">
+										<img class="img-fluid d-block" src="../img/logios/ejercicio.png" alt="logios_ejercicio">
+										<i class="bi-arrow-left-square-fill carousel-arrow left"></i>
+										<i class="bi-arrow-right-square-fill carousel-arrow right"></i>
+									</div>
+									<div class="card-footer text-uppercase fs-5">Ejercicio</div>
+								</div>
+								<div class="row d-none d-md-block">
+									<div class="col carousel-grid">
+										<img class="img-fluid rounded active" src="../img/logios/ejercicio.png" alt="logios_ejercicio" title="Ejercicio" data-title="Ejercicio">
+										<img class="img-fluid rounded" src="../img/logios/ver_desarrollo.png" alt="logios_ver_desarrollo" title="Ver desarrollo" data-title="Ver desarrollo">
+										<img class="img-fluid rounded" src="../img/logios/desarrollo.png" alt="logios_desarrollo" title="Desarrollo" data-title="Desarrollo">
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 pt-4 pt-md-0 m-auto">
+								<h2 class="section-title">Resolviendo ejercicios</h2>
+								<hr class="op-1">
+								<p class="pre-line">
+									Cada ejercicio se presenta dividido en tres partes: enunciado, desarrollo y solución. El desarrollo sólo se mostrará si presionas el botón "Visualizar desarrollo" pero, al hacerlo, perderás la posibilidad de ganar puntos por ese ejercicio.
 
-				La primera vez que ingresas a la pantalla de ejercicio, aparecerá una visita guiada para conocer cada funcionalidad en detalle.
-			</p>
-			<div class="project-separator"></div>
-			<div class="row text-center text-md-start">
-				<div class="col-12 col-md-6">
-					<a href="../img/logios/trofeo.png" target="_blank" rel="noreferrer" title="Trofeo">
-						<div class="img-hover-zoom rounded">
-							<img class="img-fluid" src="../img/logios/trofeo.png" alt="logios_trofeo">
+									La primera vez que ingresas a la pantalla de ejercicio, aparecerá una visita guiada para conocer cada funcionalidad en detalle.
+								</p>
+							</div>
 						</div>
-					</a>
-				</div>
-				<div class="col-12 col-md-6 pt-4 pt-md-0">
-					<p class="text-uppercase border-bottom border-dark bg-semitransparent-30">Visualización de trofeo</p>
-					<p class="pre-line">Cada vez que se cumpla una determinada cantidad de ejercicios resueltos, ganarás un trofeo que te otorgará puntos (excepto si, previamente, has visto el desarrollo) y la posibilidad de compartir tu logro en redes sociales.
-					</p>
-				</div>
-			</div>
-			<div id="technologies" class="row justify-content-center justify-content-md-end">
-				<div class="col-auto">
-					<div class="card bg-semitransparent-30 border-dark">
-						<div class="card-body">
-							<span class="d-md-inline-block pb-md-0">Hecho con: </span>
-							<img class="img-fluid rounded" width="24" src="../img/technologies/html5.png" alt="html5_icon" title="HTML 5" />
-							<img class="img-fluid rounded" width="24" src="../img/technologies/css3.png" alt="css3_icon" title="CSS 3" />
-							<img class="img-fluid rounded" width="24" src="../img/technologies/javascript.webp" alt="javascript_icon" title="Javascript" />
-							<img class="img-fluid rounded" width="24" src="../img/technologies/jquery.png" alt="jquery_icon" title="JQuery" />
-							<img class="img-fluid rounded" width="24" src="../img/technologies/csharp.png" alt="csharp_icon" title="C#" />
-							<img class="img-fluid rounded" width="24" src="../img/technologies/net_framework.jpg" alt="net_framework_icon" title=".NET Framework" />
-							<img class="img-fluid rounded" width="24" src="../img/technologies/sql_server.png" alt="sql_server_icon" title="SQL Server" />
+						<div class="row pt-4">
+							<div class="col text-center">
+								<a href="#trophy_section" class="see-next">
+									<i class="bi-arrow-down-circle"></i>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
+			<section id="trophy_section">
+				<div class="row text-center text-md-start section-content">
+					<div class="col">
+						<div class="row">
+							<div class="col-12 col-md-6 m-auto">
+								<a href="../img/logios/trofeo.png" target="_blank" rel="noreferrer">
+									<div class="img-hover-zoom rounded">
+										<img class="img-fluid" src="../img/logios/trofeo.png" alt="logios_trofeo">
+									</div>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 pt-4 pt-md-0 m-auto">
+								<h2 class="section-title">Visualización de trofeo</h2>
+								<hr class="op-1">
+								<p class="pre-line">
+									Cada vez que se cumpla una determinada cantidad de ejercicios resueltos, ganarás un trofeo que te otorgará puntos (excepto si, previamente, has visto el desarrollo) y la posibilidad de compartir tu logro en redes sociales.
+								</p>
+							</div>
+						</div>
+						<div class="row pt-4">
+							<div class="col text-center">
+								<a href="#technologies" class="see-next">
+									<i class="bi-arrow-down-circle"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="technologies">
+				<div class="row section-content">
+					<div class="col-auto">
+						<span class="fs-1 text-center section-title pb-2">Programado en: </span>
+						<div class="row justify-content-center text-center py-4">
+							<div class="col-auto py-3">
+								<img class="img-fluid rounded" width="96" src="../img/technologies/html5.png" alt="html5_icon" title="HTML 5" />
+								<span class="fs-2">HTML5</span>
+							</div>
+							<div class="col-auto py-3">
+								<img class="img-fluid rounded" width="96" src="../img/technologies/css3.png" alt="css3_icon" title="CSS 3" />
+								<span class="fs-2">CSS3</span>
+							</div>
+							<div class="col-auto py-3">
+								<img class="img-fluid rounded" width="96" src="../img/technologies/javascript.webp" alt="javascript_icon" title="Javascript" />
+								<span class="fs-2">Javascript</span>
+							</div>
+							<div class="col-auto py-3">
+								<img class="img-fluid rounded" width="96" src="../img/technologies/jquery.png" alt="jquery_icon" title="JQuery" />
+								<span class="fs-2">JQuery</span>
+							</div>
+							<div class="col-auto py-3">
+								<img class="img-fluid rounded" width="96" src="../img/technologies/csharp.png" alt="csharp_icon" title="C#" />
+								<span class="fs-2">C#</span>
+							</div>
+							<div class="col-auto py-3">
+								<img class="img-fluid rounded" width="96" src="../img/technologies/net_framework.jpg" alt="net_framework_icon" title=".NET Framework" />
+								<span class="fs-2">.NET Framework</span>
+							</div>
+							<div class="col-auto py-3">
+								<img class="img-fluid rounded" width="96" src="../img/technologies/sql_server.png" alt="sql_server_icon" title="SQL Server" />
+								<span class="fs-2">SQL Server</span>
+							</div>
+						</div>
+						<div class="text-center pt-4">
+							<a href="#presentation_section" class="see-next" title="Ir arriba">
+								<i class="bi-arrow-up-circle"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 		<footer></footer>
 		<script type="text/javascript" src="../lib/js/bootstrap/bootstrap.min.js"></script>

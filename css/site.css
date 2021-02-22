@@ -28,9 +28,15 @@
 	src: url(../fonts/Quicksand-Regular.ttf) format('truetype');
 }
 
+@font-face {
+	font-family: 'Inconsolata';
+	src: url(../fonts/Inconsolata-Regular.ttf) format('truetype');
+}
+
 body {
 	position: relative;
-	font-family: 'Space Mono';
+	font-family: 'Inconsolata';
+	font-size: calc(1.275rem + .3vw);
 	min-height: 100vh;
 	color: white;
 }
@@ -48,10 +54,27 @@ body:before {
   top: 0;
 }
 
-header {
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
+header, footer {
+	font-family: 'Space Mono';
 	font-size: 1rem;
+	text-shadow: 1px 2px #000;
+}
+
+header > .row {
+	/* background-color: rgb(0 0 0 / 20%); */
+	/* box-shadow: 0 1px 0 rgb(193 193 193 / 35%); */
+	/* background-image: linear-gradient(rgb(30 30 30 / 80%), rgb(15 15 15 / 50%)); */
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+
+header > .row button {
+	text-shadow: 1px 2px #000;
+}
+
+.op-1 {
+	opacity: 1;
 }
 
 .bg-semitransparent-50 {
@@ -78,6 +101,8 @@ header {
 #project_list {
 	width: -moz-fit-content;
 	width: fit-content;
+	background-color: rgba(0, 0, 0, 0.9);
+	border: 1px solid rgb(193 193 193 / 35%);
 }
 
 header > .row a {
@@ -93,7 +118,16 @@ header > .row a {
 }
 
 #landing_page {
-	height: calc(100vh - 70.06px);
+	height: 100vh;
+}
+
+.portfolio-legend {
+	width: 90%;
+	margin: 1.5rem auto auto auto;
+}
+
+.about-wrapper, .contact-wrapper {
+	padding-top: 5rem;
 }
 
 footer {
@@ -135,32 +169,13 @@ a:hover {
   transform-origin: center left;
 }
 
-.technologies-wrapper {
-	padding: 0.5rem;
-}
-
-#technologies {
-	margin-top: 3rem;
-}
-
-#technologies .card-body {
-	padding: 0.5rem;
-}
-
 #technologies span {
-	color: #a9a7a7;
-	text-align: center;
 	font-size: 0.8rem;
 	display: block;
-	padding-bottom: 0.5rem;
 }
 
 .social-buttons {
 	font-size: 2rem;
-}
-
-#see_projects > i::before {
-	line-height: 2.6rem;
 }
 
 #see_projects:hover > i {
@@ -219,6 +234,7 @@ a:hover {
 
 #logios_container {
 	background-image: url(../img/logios/portada.png);
+	border-radius: 4px;
 }
 
 #logios_container .project-content {
@@ -250,7 +266,7 @@ a:hover {
 }
 
 #find_my_subtitles_container {
-	background-image: url('../img/find my subtitles/principal.png');
+	background-image: url('../img/find my subtitles/portada.png');
 }
 
 #find_my_subtitles_container .project-content {

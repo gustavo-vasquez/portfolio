@@ -1,4 +1,14 @@
 (function() {
+	document.querySelectorAll('.see-next').forEach(element => {
+		element.addEventListener('click', function(event) {
+			event.preventDefault();
+			document.querySelector(element.hash).scrollIntoView({
+				behavior: "smooth",
+				block: "start"
+			});
+		});
+	});
+	
 	let anchorLinks = {
 		home: "index.html",
 		about: "about.html",
@@ -47,34 +57,33 @@
 				<br>
 				<a href=${anchorLinks.contact} class="animate">Contacto</a>
 			</div>
-		</div>
-		<div class="collapse navbar-collapse" id="project_list">
-			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				<li class="nav-item">
-					<a class="nav-link" href=${anchorLinks.logios}>Logios</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href=${anchorLinks.cvbuilder}>CVBuilder</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href=${anchorLinks.minibird}>MiniBird</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href=${anchorLinks.streadio}>Streadio</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href=${anchorLinks.findMySubtitles}>Find my subtitles</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href=${anchorLinks.winNotes}>WinNotes</a>
-				</li>
-			</ul>
+			<div class="collapse navbar-collapse rounded" id="project_list">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href=${anchorLinks.logios}>Logios</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href=${anchorLinks.cvbuilder}>CVBuilder</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href=${anchorLinks.minibird}>MiniBird</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href=${anchorLinks.streadio}>Streadio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href=${anchorLinks.findMySubtitles}>Find my subtitles</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href=${anchorLinks.winNotes}>WinNotes</a>
+					</li>
+				</ul>
+			</div>
 		</div>`;
 	}
 
 	function getFooterHTML() {
-		return `<footer>
-			<hr/>
+		return `<hr/>
 			<div class="row">
 			<div class="col-12 col-md-4 pb-3 pb-md-0 text-center text-md-start">
 				<span class="d-block">Gustavo Vasquez Zurita</span>
@@ -87,11 +96,10 @@
 			</div>
 			<div class="col-12 col-md-4 text-center text-md-end">
 				<div class="social-buttons">
-					<a href="mailto:vasquez.mgustavo@gmail.com" title="Correo"><i class="bi-envelope"></i></a>
-					<a href="https://github.com/gustavo-vasquez" target="_blank" title="Github"><i class="bi-github"></i></a>
-					<a href="https://www.linkedin.com/in/gustavo-vasquez-7568b680/" target="_blank" title="Linkedin"><i class="bi-linkedin"></i></a>
-				<div>
-			</div>
-		</footer>`;
+					<a href="mailto:vasquez.mgustavo@gmail.com" title="Correo"><i class="bi-envelope d-inline-flex"></i></a>
+					<a href="https://github.com/gustavo-vasquez" target="_blank" title="Github"><i class="bi-github d-inline-flex"></i></a>
+					<a href="https://www.linkedin.com/in/gustavo-vasquez-7568b680/" target="_blank" title="Linkedin"><i class="bi-linkedin d-inline-flex"></i></a>
+				</div>
+			</div>`;
 	}
 })();
