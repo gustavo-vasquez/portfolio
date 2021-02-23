@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<title>Formulario de contacto - Portfolio de Gustavo Vasquez</title>
+		<link rel="icon" href="favicon.ico" />
+		<title>Contacto - Portfolio de Gustavo Vasquez Zurita</title>
 		<link rel="stylesheet" type="text/css" href="lib/css/bootstrap/bootstrap.min.css">
 		<link rel="stylesheet" href="lib/css/bootstrap-icons/bootstrap-icons.css">
 		<link rel="stylesheet" type="text/css" href="css/site.css">
@@ -21,7 +22,7 @@
 							<div class="card-body">
 								<form action="https://formspree.io/f/mknpeevj" method="POST" class="form-group">
 									<legend class="fs-6 pb-3">Si está interesado/a en gente nueva para sus proyectos presentes o futuros en su empresa o pyme, siéntase libre de comunicarse conmigo.</legend>
-									<input type="email" name="_replyto" placeholder="Correo electrónico" class="form-control bg-semitransparent-50" required />
+									<input type="email" name="_replyto" placeholder="Correo electrónico" class="form-control bg-semitransparent-50" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
 									<input type="text" name="name" placeholder="Nombre y apellido" class="form-control bg-semitransparent-50" required />
 									<input type="text" name="subject" placeholder="Asunto" class="form-control bg-semitransparent-50" required />
 									<textarea rows="7" name="body" placeholder="Escribe tu mensaje..." class="form-control bg-semitransparent-50" required></textarea>

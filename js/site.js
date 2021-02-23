@@ -98,7 +98,7 @@
 				<div class="social-buttons">
 					<a href="mailto:vasquez.mgustavo@gmail.com" title="Correo"><i class="bi-envelope d-inline-flex"></i></a>
 					<a href="https://github.com/gustavo-vasquez" target="_blank" title="Github"><i class="bi-github d-inline-flex"></i></a>
-					<a href="https://www.linkedin.com/in/gustavo-vasquez-7568b680/" target="_blank" title="Linkedin"><i class="bi-linkedin d-inline-flex"></i></a>
+					<a href="https://www.linkedin.com/in/gustavo-vasquez-7568b680" target="_blank" title="Linkedin"><i class="bi-linkedin d-inline-flex"></i></a>
 				</div>
 			</div>`;
 	}

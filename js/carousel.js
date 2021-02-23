@@ -43,9 +43,9 @@
 			default:
 				break;
 		}
-		//console.time('updateCarousel');
+		
 		updateCarousel();
-		//console.timeEnd('updateCarousel');
+		
 	}
 	
 	function updateCarousel() {

@@ -61,9 +61,6 @@ header, footer {
 }
 
 header > .row {
-	/* background-color: rgb(0 0 0 / 20%); */
-	/* box-shadow: 0 1px 0 rgb(193 193 193 / 35%); */
-	/* background-image: linear-gradient(rgb(30 30 30 / 80%), rgb(15 15 15 / 50%)); */
 	position: absolute;
 	width: 100%;
 	z-index: 1;
