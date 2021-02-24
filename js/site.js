@@ -24,7 +24,7 @@
 	parseLocalLinks();
 	
 	function parseLocalLinks() {
-		const initialPath = location.pathname.substring(location.pathname.indexOf("portfolio-page/") + 15);
+		const initialPath = location.pathname.substring(location.pathname.indexOf("portfolio/") + 10);
 		const PROJECTS_PATH = "projects/";
 		const UP_LEVEL_PATH = "../";
 		
