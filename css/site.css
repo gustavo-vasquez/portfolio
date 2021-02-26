@@ -181,17 +181,17 @@ a:hover {
 	-webkit-animation: bounce 1s infinite;
 }
 
-#my_projects > div {
+#my_projects > div > div > div {
 	padding-top: 0.2rem;
 	padding-bottom: 0.2rem;
 }
 
 @media(min-width: 768px) {
-	#my_projects > div:nth-child(odd) {
+	#my_projects > div > div > div:nth-child(odd) {
 		padding-right: 0.2rem;
 	}
 	
-	#my_projects > div:nth-child(even) {
+	#my_projects > div > div > div:nth-child(even) {
 		padding-left: 0.2rem;
 	}
 }
