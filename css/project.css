@@ -141,6 +141,7 @@ header > .row button {
 .carousel-container {
 	text-align: center;
 	overflow: hidden;
+	background-color: rgba(var(--main-link-color), 0.2);
 }
 
 .carousel-gallery {
@@ -148,12 +149,20 @@ header > .row button {
 	padding: 0;
 }
 
-.carousel-gallery > img {
-	-webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 0.5s; /* Firefox < 16 */
-    -ms-animation: fadein 0.5s; /* Internet Explorer */
-    -o-animation: fadein 0.5s; /* Opera < 12.1 */
-    animation: fadein 0.5s;
+.slide-to-left {
+	-webkit-animation: slideLeft 2.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: slideLeft 2.5s; /* Firefox < 16 */
+    -ms-animation: slideLeft 2.5s; /* Internet Explorer */
+    -o-animation: slideLeft 2.5s; /* Opera < 12.1 */
+    animation: slideLeft 2.5s;
+}
+
+.slide-to-right {
+	-webkit-animation: slideRight 2.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: slideRight 2.5s; /* Firefox < 16 */
+    -ms-animation: slideRight 2.5s; /* Internet Explorer */
+    -o-animation: slideRight 2.5s; /* Opera < 12.1 */
+    animation: slideRight 2.5s;
 }
 
 .carousel-grid {
@@ -162,7 +171,7 @@ header > .row button {
 }
 
 .carousel-grid img {
-	width: 6rem;
+	width: 7rem;
 	height: 4rem;
 	border: 2px solid black;
 	transition: border 0.1s ease-in-out;
@@ -177,7 +186,7 @@ header > .row button {
 }
 
 .carousel-grid img.active {
-	border-color: var(--main-link-color);
+	border-color: rgb(var(--main-link-color));
 }
 
 .carousel-arrow {
@@ -191,7 +200,7 @@ header > .row button {
 }
 
 .carousel-arrow:hover {
-	color: var(--main-link-color);
+	color: rgb(var(--main-link-color));
 	cursor: pointer;
 }
 

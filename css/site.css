@@ -1,5 +1,5 @@
 :root {
-	--main-link-color: rgb(0,204,106);
+	--main-link-color: 0,220,71;
 	--logios-color: 4,70,135;
 	--cvbuilder-color: 56,133,70;
 	--streadio-color: 139,6,6;
@@ -10,12 +10,12 @@
 
 ::-moz-selection {
 	color: black;
-	background: var(--main-link-color);
+	background: rgb(var(--main-link-color));
 }
 
 ::selection {
 	color: black;
-	background: var(--main-link-color);
+	background: rgb(var(--main-link-color));
 }
 
 @font-face {
@@ -29,14 +29,14 @@
 }
 
 @font-face {
-	font-family: 'Inconsolata';
-	src: url(../fonts/Inconsolata-Regular.ttf) format('truetype');
+	font-family: 'Karla';
+	src: url(../fonts/Karla-Regular.ttf) format('truetype');
 }
 
 body {
 	position: relative;
-	font-family: 'Inconsolata';
-	font-size: calc(1.275rem + .3vw);
+	font-family: 'Karla';
+	font-size: calc(1.1rem + .3vw);
 	min-height: 100vh;
 	color: white;
 }
@@ -84,7 +84,7 @@ header > .row button {
 
 #projects_toggler {
 	font-size: inherit;
-	color: var(--main-link-color);
+	color: rgb(var(--main-link-color));
 	transition: color 0.3s ease-in-out;
 	padding-left: 0;
 	padding-right: 0;
@@ -124,6 +124,7 @@ header > .row a {
 }
 
 .about-wrapper, .contact-wrapper {
+	min-height: calc(100vh - 89px);
 	padding-top: 5rem;
 }
 
@@ -132,7 +133,7 @@ footer {
 }
 
 a {
-	color: var(--main-link-color);
+	color: rgb(var(--main-link-color));
 	text-decoration: none;
 	transition: color 0.3s ease-in-out;
 }
@@ -201,12 +202,13 @@ a:hover {
 	min-height: auto;
 	border-radius: 4px;
 	overflow: hidden;
+	text-shadow: 0px 0px 3px #000;
 	background-attachment: scroll;
-    background-position: center top;
-    background-clip: border-box;
-    background-origin: padding-box;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-position: center top;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #my_projects div[id$="_container"] a {
@@ -216,9 +218,13 @@ a:hover {
 .project-content {
 	width: 100%;
 	min-height: 340px;
-    padding: 1rem;
+  padding: 1rem;
 	border-radius: 4px;
 	transition: margin 0.5s;
+}
+
+.project-content > :first-child {
+	font-family: 'Quicksand';
 }
 
 #my_projects div[id$="_container"]:hover .project-content {
@@ -290,4 +296,52 @@ a:hover {
   25%, 75% { bottom: 15px; }
   50%      { bottom: 20px; }
   100%     { bottom: 0; }
+}
+
+@-webkit-keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  14.28% {
+    transform: translateX(0);
+  }
+  85.71% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  14.28% {
+    transform: translateX(0);
+  }
+  85.71% {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  14.28% {
+    transform: translateX(0);
+  }
+  85.71% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  14.28% {
+    transform: translateX(0);
+  }
+  85.71% {
+    transform: translateX(0);
+  }
 }
